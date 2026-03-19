@@ -1,0 +1,30 @@
+name = "ClimateIndices"
+uuid = "751d601e-d19b-40e3-a822-38df5538f6d0"
+version = "0.1.0"
+authors = ["contributors"]
+
+[workspace]
+projects = ["test"]
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+NaNStatistics = "b946abbf-3ea7-4610-9019-9858bfdeaf2d"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[weakdeps]
+DimensionalData = "0703355e-de33-11e8-32ee-c1048f7db016"
+
+[extensions]
+DimensionalDataExt = "DimensionalData"
+
+[compat]
+Dates = "1.11.0"
+NaNStatistics = "0.6.56"
+Statistics = "1.11.1"
+julia = "1.12"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
